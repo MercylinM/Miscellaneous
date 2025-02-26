@@ -24,10 +24,12 @@
 
         .classes{
             align-items: center;
-    
+            display: block;
             margin: 10% auto;
-            max-width: 80%;
+            padding: 10px;
+            max-width: 800px;
             justify-content: center;
+            text-align: center;
         }
 
         img{
@@ -45,11 +47,20 @@
         
         .breakdown{
             display: grid;
+            grid-template-columns: auto auto auto;
             align-items: center;
-            margin: 0% auto;
+            margin: 10px auto;
             justify-content: center;
+            column-gap: 5px;
+            gap: 10px 20px;
+            padding: 10px
 
         }
+
+        .heading{
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
@@ -68,7 +79,7 @@
     <!-- classes we've had -->
      <div class="classes" >
         <h1>Classes I'm Taking</h1>
-        <ul style="text-decoration: none;">
+        <ul style="list-style-type: none;">
             <li>Navigating your journey</li>
             <li>Front-end Mobile</li>
             <li>Front-end Web</li>
@@ -77,12 +88,13 @@
             <li>UX Research</li>
             <li>UI/UX Design</li>
             <li>Product Management</li>
-            <li>Quality Assurance/li>
+            <li>Quality Assurance</li>
         </ul>
      </div>
 
+    <h1 class="heading">Courses Breakdown</h1>
+    <p style="text-align: center;"> Here is a breakdown of what I have learnt on my first month in AkiraChix.</p>
      <div class="breakdown">
-        <h1>Courses Breakdown</h1>
         <div class="nyj">
             <h2>Navigating your journey</h2>
             <ol>
@@ -120,11 +132,11 @@
                 <li>Linux commands on files and folders</li>
                 <li>Installing packages</li>
                 <li>Computer Programming and programming languages</li>
-                <li></li>
+                <li>Python Interpreter</li>
             </ol>
         </div>
         <div class="das">
-            <h2>Data and Software Architecture</h2>
+            <h2>Data & Software Architecture</h2>
             <ol>
                 <li>Computer Basics</li>
                 <li>Safety guidelines of a computer</li>
@@ -133,42 +145,47 @@
                 <li>Time and Space complexity</li>
             </ol>
         </div>
-        <!-- <div class="qa">
+        <div class="qa">
+            <h2>Quality Assurance</h2>
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>SDLC introduction</li>
+                <li>SDLC models</li>
+                <li>Test cases</li>
+                <li>Test plan</li>
+                <li>Bugs and defects</li>
             </ol>
         </div>
+
         <div class="research">
+            <h2>UX Research</h2>
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Introduction to UX research</li>
+                <li>Human Centered Design</li>
+                <li>Types of UX researches</li>
+                <li>Problem Definition</li>
+                <li>Creating how might we statements</li>
             </ol>
         </div>
         <div class="design">
+            <h2>UI/UX Design</h2>
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Principles of Design</li>
+                <li>Elements of design</li>
+                <li>Sketching</li>
+                <li>Introduction to UI/UX design</li>
+                <!-- <li></li> -->
             </ol>
         </div>
         <div class="pm">
+            <h2>Product Management</h2>
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Email Creation</li>
+                <li>using Google tools for collaborations</li>
+                <li>Introduction to Project Management</li>
+                <li>Create a persona</li>
+                <li>Outline goals and pain-points</li>
             </ol>
-        </div> -->
+        </div> 
      </div>
     
 </body>
